@@ -1,0 +1,124 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #fafafa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.login-box {
+    background-color: #fff;
+    border: 1px solid #dbdbdb;
+    width: 350px;
+    padding: 40px;
+    text-align: center;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+    width: 175px;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    background-color: #fafafa;
+}
+
+.login-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #3897f0;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.login-button:hover {
+    background-color: #3184d6;
+}
+
+.or-separator {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.or-separator .line {
+    flex: 1;
+    height: 1px;
+    background-color: #dbdbdb;
+}
+
+.or-separator .or-text {
+    margin: 0 10px;
+    color: #8e8e8e;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.fb-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4267b2;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.fb-button:hover {
+    background-color: #365899;
+}
+
+.forgot-password {
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.forgot-password a {
+    color: #00376b;
+    text-decoration: none;
+}
+
+.signup-box {
+    background-color: #fff;
+    border: 1px solid #dbdbdb;
+    width: 350px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+.signup-box p {
+    margin: 0;
+}
+
+.signup-box a {
+    color: #3897f0;
+    text-decoration: none;
+    font-weight: bold;
+}

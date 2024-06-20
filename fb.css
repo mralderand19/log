@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.fb-login-container {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    padding: 20px;
+    text-align: center;
+}
+
+.fb-login-box {
+    margin-bottom: 20px;
+}
+
+.fb-logo {
+    width: 120px;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: calc(100% - 30px);
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #dddfe2;
+    border-radius: 5px;
+}
+
+.fb-button {
+    background-color: #1877f2;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.fb-button:hover {
+    background-color: #166fe5;
+}
+
+.fb-links {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.fb-links a {
+    text-decoration: none;
+    color: #1877f2;
+}
+
+.fb-links a:hover {
+    text-decoration: underline;
+}
+
+.fb-link-divider {
+    margin: 0 8px;
+    color: #8d949e;
+}
